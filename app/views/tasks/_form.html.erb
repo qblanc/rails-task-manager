@@ -1,0 +1,16 @@
+<div class="form-container container">
+<%= form_for task do |f| %>
+  <div class="form-row form-margin">
+    <%= f.text_field :title, class:'form-control', placeholder: 'Name of the task' %>
+  </div>
+  <div class="form-row form-margin">
+    <%= f.text_field :details, class:'form-control', placeholder: 'Please describe your task' %>
+  </div>
+  <div class="form-check form-margin">
+    <%= f.check_box :completed, {class:'form-check-input'} %>
+    <%= f.label :completed, class: 'form-check-label' %>
+  </div>
+  <br>
+  <%= f.submit bouton, class: "btn btn-primary" %>
+<% end %>
+</div>
